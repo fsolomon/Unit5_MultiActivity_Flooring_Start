@@ -4,14 +4,17 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class ResultActivity2 extends ActionBarActivity {
-
+    TextView result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_activity2);
+        result = (TextView) findViewById(R.id.txtResult);
+
     }
 
 
@@ -36,4 +39,6 @@ public class ResultActivity2 extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

@@ -1,9 +1,11 @@
 package edu.css.cis3334.unit5_multiactivity_flooring_start;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -35,5 +37,14 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onClick(View v){
+
+
+        Intent i = new Intent(this, ResultActivity2 .class);
+        startActivity(i);
+
+
     }
 }
